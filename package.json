@@ -35,7 +35,7 @@
     ]
   },
   "scripts": {
-    "start-js": "react-scripts start",
+    "start-js": "cross-env NODE_PATH=\"src/\" react-scripts start",
     "start": "npm-run-all -p watch-css start-js",
     "build-css": "node-sass-chokidar --include-path ./src/styles/scss --include-path ./node_modules src/styles/scss/ -o src/styles/css",
     "build": "npm run build-css && react-scripts build",
